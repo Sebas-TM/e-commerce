@@ -1,0 +1,39 @@
+.about-us {
+    width: 30rem;
+    margin: 5rem auto 10rem;
+}
+
+.about-us img {
+    width: 30rem;
+}
+
+.about-us .title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.about-us .paragraph {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        width: 70rem;
+    }
+
+    .about-us img {
+        width: 70rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-us {
+        width: 100rem;
+    }
+
+    .about-us img {
+        width: 100rem;
+    }
+}

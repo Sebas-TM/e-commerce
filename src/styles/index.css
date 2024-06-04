@@ -1,0 +1,119 @@
+.main {
+    width: 80%;
+    margin: auto;
+    margin-top: -5rem;
+    background-color: var(--color-white);
+    border-radius: 1rem 1rem 0 0;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.main .section-products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+.main .section-products .input-group-search {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+.input-group-search .category-title {
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.main .section-products .input-group-search .container-input {
+    position: relative;
+}
+
+.input-group .label-search-icon {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.input-search {
+    width: 25rem;
+    font-size: 1.2rem;
+    padding-right: 4rem;
+    /* background-color: var(--color-white); */
+}
+
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+
+.container-products .not-found {
+    margin-top: 10rem;
+}
+
+@media (min-width: 768px) {
+    .container-products {
+        grid-template-columns: repeat(1, 1fr);
+        /* padding: 8rem 4rem; */
+    }
+    .main {
+        padding: 4rem;
+        flex-direction: row;
+        align-items: start;
+    }
+    .main .section-products {
+        align-items: end;
+        width: 80%;
+    }
+    .main .section-products .input-group-search {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main .section-products .input-group-search {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1540px) {
+    .container-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 2000px) {
+    .container-products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 2800px) {
+    .container-products {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

@@ -1,0 +1,106 @@
+.container-buy-product {
+    width: 90%;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container-buy-product .container-image {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 5rem;
+    background-color: var(--color-white);
+    padding: 4rem 0;
+}
+
+.container-buy-product .container-image .image-product {
+    width: 70%;
+}
+
+.container-buy-product .container-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-buy-product .container-info .product-category {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.container-buy-product .container-info .product-title {
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.container-buy-product .container-info .rating {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.container-buy-product .container-info .rating .product-rating-rate {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-buy-product .container-info .rating .product-rating-rate .icon {
+    color: rgb(177, 177, 10);
+}
+
+.container-buy-product .container-info .rating .product-rating-count {
+    color: var(--color-black);
+}
+
+.container-buy-product .container-info .product-price {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.container-buy-product .container-info .product-description {
+    font-size: 1.5rem;
+    margin: 4rem 0 6rem 0;
+}
+
+.container-buy-product .container-info .container-quantity {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 6rem;
+}
+
+.container-buy-product .container-info .container-quantity .quantity {
+    font-size: 2rem;
+    width: 5rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--color-white);
+}
+
+.container-buy-product .container-info .container-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-buy-product .container-info .container-button .btn-buy {
+    margin: initial;
+}
+
+@media (min-width: 768px) {
+    .container-buy-product {
+        width: 70%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+    .container-buy-product .container-image .image-product {
+        width: 50%;
+    }
+    .container-buy-product .container-image {
+        margin-bottom: 0;
+    }
+}

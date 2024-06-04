@@ -1,0 +1,100 @@
+.item {
+    padding: 3rem 2rem 2rem 2rem;
+    display: flex;
+    gap: 1rem;
+    width: 25rem;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid var(--color-gray);
+    border-radius: 1.5rem;
+    align-items: center;
+    position: relative;
+}
+
+.item .btn-delete {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+}
+
+.item .product {
+    display: flex;
+    gap: 2rem;
+    width: 25rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.item .product .container-image {
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .product .container-image img {
+    width: 7rem;
+}
+
+.item .product .product-info h1 {
+    font-size: 1.5rem;
+}
+
+.item .product .product-info p {
+    font-size: 1.5rem;
+}
+
+.item .container-actions {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.item .quantity .container-quantity {
+    display: flex;
+}
+
+.item .quantity .text,
+.item .subtotal .text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.item .quantity .container-quantity p {
+    font-size: 1.5rem;
+    width: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.item .subtotal {
+    width: 7.5rem;
+}
+
+.item .subtotal .text {
+    margin-bottom: 1.3rem;
+}
+
+.item .subtotal .ammount {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .item {
+        flex-direction: row;
+        width: 65rem;
+    }
+    .item .container-actions {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        margin-top: 0rem;
+    }
+    .item .product {
+        width: 35rem;
+        justify-content: start;
+    }
+}

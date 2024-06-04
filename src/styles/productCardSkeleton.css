@@ -1,0 +1,38 @@
+.card-skeleton .container-image .image {
+    background-color: var(--color-gray-light);
+    height: 30rem;
+    min-width: 40rem;
+}
+
+.card-skeleton .container-info .subcontainer-skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-skeleton .container-info .product-title,
+.card-skeleton .container-info .product-title-2 {
+    width: 15rem;
+    padding: 0.5rem;
+    background-color: var(--color-gray-light);
+    border-radius: 0.5rem;
+}
+
+.card-skeleton .container-info .product-title-2 {
+    width: 15rem;
+}
+
+.card-skeleton .container-info .product-price,
+.card-skeleton .container-info .product-rating {
+    width: 10rem;
+    padding: 0.5rem;
+    background-color: var(--color-gray-light);
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .card-skeleton .container-info .product-title,
+    .card-skeleton .container-info .product-title-2 {
+        width: 25rem;
+    }
+}

@@ -1,0 +1,82 @@
+.container-categories {
+    width: 30rem;
+}
+.container-categories .title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container-categories .title h1 {
+    font-size: 1.8rem;
+}
+
+.container-categories .title .row-icon {
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.container-categories .title .row-icon.active {
+    transform: rotate(90deg);
+}
+
+.container-categories .categories-list {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+.container-categories .categories-list.active {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all 0.5s ease;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.container-categories .categories-list .categorie {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.container-categories .categories-list.active .categorie {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .container-categories .title {
+        font-size: 1.8rem;
+    }
+    .container-categories .categories-list .categorie:hover {
+        text-decoration: underline;
+        transition: all 0.3s ease;
+    }
+    .container-categories .categories-list,
+    .container-categories .categories-list.active {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        transition: all 0.5s ease;
+        height: 20rem;
+        margin-top: 2rem;
+    }
+
+    .container-categories .title .row-icon {
+        display: none;
+    }
+
+    .container-categories .categories-list .categorie,
+    .container-categories .categories-list.active .categorie {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+}
