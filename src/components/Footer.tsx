@@ -20,16 +20,16 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to={'/'}>
+                            <a target='_blank' href='https://github.com/Sebas-TM/e-commerce.git' rel="noopener noreferrer">
                                 <FaGithub />
                                 GitHub
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link target='blank' to={'www.linkedin.com/in/victortimoteo'}>
+                            <a target='_blank' href='https://www.linkedin.com/in/victortimoteo' rel="noopener noreferrer">
                                 <IoLogoLinkedin />
                                 Linkedin
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
