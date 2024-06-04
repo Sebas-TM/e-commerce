@@ -14,10 +14,10 @@ const Footer = () => {
                 <div className="col">
                     <ul>
                         <li>
-                            <Link to={'/'}>
+                            <a target='_blank' href='mailto:victor.timoteo.montoya@gmail.com' rel="noopener noreferrer">
                                 <CiMail />
                                 Mail
-                            </Link>
+                            </a>
                         </li>
                         <li>
                             <a target='_blank' href='https://github.com/Sebas-TM/e-commerce.git' rel="noopener noreferrer">
